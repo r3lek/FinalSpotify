@@ -128,10 +128,9 @@ module.exports = () => {
                         querystring.stringify({
                             error: 'invalid_token'
                         }));
-                }
+                }   
             });
         }
-
     });
 
     router.get('/refresh_token', function (req, res) {
@@ -157,7 +156,5 @@ module.exports = () => {
             }
         });
     });
-
     return router;
-
 }

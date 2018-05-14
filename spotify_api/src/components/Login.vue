@@ -1,23 +1,22 @@
 <template>
 <div id="login">
-    
+    <!-- No longer needed -->    
 </div>
 
 </template>
 
 <script>
-    
-    
+
     export default {
         name: 'login',        
         data () {
             return {
-                authtoken: 'abcd',
+                authtoken: '',
                 error: false
             }
         },
         methods: {
-            submitTodo (description) {
+            login(description) {
                 if (description === '') return this.error = true;
 
                 this.authtoken = ''

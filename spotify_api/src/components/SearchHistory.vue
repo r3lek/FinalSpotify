@@ -4,20 +4,20 @@
             <div class="modal-background"></div>
             <div class="modal-card">
                 <header class="modal-card-head">
-                <p class="modal-card-title">Search History</p>
-                <button class="delete" aria-label="close" @click="openHistory = false"></button>
+                  <p class="modal-card-title">Search History</p>
+                  <button class="delete" aria-label="close" @click="openHistory = false"></button>
                 </header>
                 <section class="modal-card-body">
-                <!-- Content -->
-                 <a class="panel-block" v-for="search in currentSearches" :key="currentSearches.indexOf(search)" @click="search_artist(search.searchQuery)">{{search.searchQuery}} - {{search.searchTime}}</a>
+                  <!-- Content -->
+                  <a class="panel-block" v-for="search in currentSearches" :key="currentSearches.indexOf(search)" @click="search_artist(search.searchQuery)">{{search.searchQuery}} - {{search.searchTime}}</a>
                 </section>
                 <footer class="modal-card-foot">
-                <!-- <button class="button is-success">Save changes</button>
-                <button class="button">Cancel</button> -->
+                  <!-- <button class="button is-success">Save changes</button>
+                  <button class="button">Cancel</button> -->
                 </footer>
             </div>
         </div>
-        <a @click="openHistory = true" class="button is-success" href="#" id="search-history">Search History</a>
+      <a @click="openHistory = true" class="button is-success" href="#" id="search-history">Search History</a>
     </div>
 </template>
 <script>

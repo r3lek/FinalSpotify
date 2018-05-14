@@ -36,7 +36,7 @@ export default {
   name: "app",
   data() {
     return {
-      description: "Search for an artist, song, or album!"
+      description: "Search for an artist."
     };
   },
   components: {

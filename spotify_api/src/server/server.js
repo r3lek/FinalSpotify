@@ -11,18 +11,7 @@ app.use(express.static(path.join(__dirname, '..', '/../dist')))
 app.use(require('../router/routes')()) //routes.js for wrapping spotify-module methods
 const io = require('./sockets')(server)
 
-// console.log("the dir name: ", path.join(__dirname, '..', '/../dist/'));
-// console.log('Listening on 8080');
-// app.listen(8080,()=>{
-
-// });
 
 server.listen(8080, () => {
     console.log('Listening on port 8080...')
 })
-
-//Export io instance
-// module.exports = {
-//     io
-// }
-

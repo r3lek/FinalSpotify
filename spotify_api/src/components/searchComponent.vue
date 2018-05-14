@@ -6,11 +6,12 @@
 
                     <a class="navbar-link">
                     <!-- Search for --><img :src=queryImage height="100" width="50">
-                
-                    </a>
+
+                    </a>    
+                        <!-- ************* NOTE: Will only search for Artists ************* --> 
                         <div class="navbar-dropdown is-boxed">  
                             <!-- for some reason the vue bind scr attribute has a different "root (starting location)" than the default html src attribute -->
-                            <a @click="specifySearch('song','https://image.flaticon.com/icons/svg/148/148722.svg')" class="navbar-item">
+                            <a @click="specifySearch('artist','https://image.flaticon.com/icons/svg/148/148722.svg')" class="navbar-item">
                                 <!-- Song --> <img src="https://image.flaticon.com/icons/svg/148/148722.svg" height="100" width="100">
                             </a>
 
@@ -18,7 +19,7 @@
                                 <!-- Artist --> <img src="https://image.flaticon.com/icons/svg/234/234450.svg" height="100" width="100">
                             </a>
 
-                            <a @click="specifySearch('album', 'https://image.flaticon.com/icons/svg/140/140258.svg')" class="navbar-item">
+                            <a @click="specifySearch('artist', 'https://image.flaticon.com/icons/svg/140/140258.svg')" class="navbar-item">
                             <!-- Album --> <img src="https://image.flaticon.com/icons/svg/140/140258.svg" height="100" width="100">
                             </a>
                         </div>
